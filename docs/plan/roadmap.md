@@ -43,7 +43,7 @@ StudyOS 的一切产品设计与阶段规划都服务于同一个循环：
 | 阶段 | 核心目标 | 产品演进 | 技术演进 | 学习重点 | 主要产出 | 前置 |
 | --- | --- | --- | --- | --- | --- | --- |
 | [P0](phase-00/README.md) ✅ | 定方向、立计划系统 | 明确产品定位与边界 | 仅文档 | 需求分析、项目驱动学习、Git 文档习惯 | 计划网络（本目录） | — |
-| [P1](phase-01/README.md) ⬜ | 跑通知识学习闭环 | 知识 CRUD、知识详情、关联任务、学习记录、规则建议、薄弱点 | HTML/CSS/JS、DOM、localStorage | JS 核心、DOM/Event、数据建模、状态、本地存储、基础模块化、Git | 可离线运行的学习闭环 MVP | P0 |
+| [P1](phase-01/README.md) 🟨 | 跑通知识学习闭环 | 知识 CRUD、知识详情、关联任务、学习记录、规则建议、薄弱点 | HTML/CSS/JS、DOM、localStorage | JS 核心、DOM/Event、数据建模、状态、本地存储、基础模块化、Git | 可离线运行的学习闭环 MVP | P0 |
 | [P2](phase-02/README.md) ⬜ | 前端可维护化 | 闭环体验组件化重建 | React、TypeScript、Vite | 组件、状态、类型、构建 | 组件化前端 | P1 |
 | [P3](phase-03/README.md) ⬜ | 建立后端服务 | 知识 / 任务 / 记录 API 化 | HTTP、REST、FastAPI（临时存储） | HTTP、Python、FastAPI、API 设计 | 可调用的后端原型 | P2 |
 | [P4](phase-04/README.md) ⬜ | 可靠持久化与关系 | 知识层级与关系落库 | SQL、PostgreSQL、ORM、迁移 | 数据建模、SQL、事务、关系 | 后端数据层 | P3 |
@@ -122,6 +122,6 @@ phase-XX/README.md（阶段计划）
 
 ## 当前状态与下一步
 
-- 已完成：Phase 0（项目定义）与 2026-09-17 计划系统整合。
-- 待开始：Phase 1。开发者说“进入 Phase 1”后，按 [maintenance.md](maintenance.md#进入-phase-的标准流程) 生成 [phase-01/plan.md](phase-01/README.md)（Level 3 详细计划），确认后才允许写代码。
-- 仓库现状：`src/` 仅有空脚手架，无业务代码；当前阶段严禁提前实现功能。
+- 已完成：Phase 0（项目定义）与 2026-09-17 计划系统整合；Phase 1 的 M0 基线（提交 `61e6ddb`）。
+- 进行中：Phase 1（2026-09-19 进入，[D-012](decisions.md)、[D-013](decisions.md)）。M1 数据与存储的 Level 3 计划已生成（[phase-01/plan.md](phase-01/plan.md)），待开发者确认后开始编码；M2–M7 不提前展开。
+- 仓库现状：`src/` 仅有空脚手架，无业务代码；M1 完成前不写任何 UI。

@@ -2,7 +2,7 @@
 
 这里是 StudyOS 长期开发与学习规划的唯一入口。计划不是一次性文档，而是随项目演进持续更新的 **Living Roadmap**：总计划定义方向，Phase 计划负责当前阶段，实际开发结果反过来修正总计划。
 
-> 当前状态：**计划系统已建立，Phase 0 已完成，Phase 1 待进入。尚未编写任何业务代码。**
+> 当前状态：**Phase 0 已完成，Phase 1 进行中（M0 ✅，M1 计划已就绪、代码未开始）。尚未编写任何业务代码。**
 
 ## 文档导航
 
@@ -20,7 +20,7 @@
 | 阶段 | 主题 | 状态 |
 | --- | --- | --- |
 | [phase-00](phase-00/README.md) | 项目定义与计划系统 | ✅ 已完成 |
-| [phase-01](phase-01/README.md) | 知识学习闭环 MVP（HTML + CSS + JavaScript + localStorage） | ⬜ 待进入 |
+| [phase-01](phase-01/README.md) | 知识学习闭环 MVP（HTML + CSS + JavaScript + localStorage） | 🟨 进行中（M1，[plan](phase-01/plan.md)） |
 | [phase-02](phase-02/README.md) | 前端工程化（React + TypeScript + Vite） | ⬜ 规划中 |
 | [phase-03](phase-03/README.md) | 后端服务（HTTP + FastAPI + REST API） | ⬜ 规划中 |
 | [phase-04](phase-04/README.md) | 数据库与关系建模（SQL + PostgreSQL + ORM） | ⬜ 规划中 |
@@ -70,4 +70,4 @@ Level 3  Task Plan（phase-XX/plan.md，进入该阶段时才创建）
             才拆具体任务：页面 → 模块 → DOM/事件 → 数据 → 存储
 ```
 
-当前只维护 Level 1 和 **Phase 1 的 Level 2 计划**；其他 Phase 保持高层规划，不提前展开任务细节。
+当前维护 Level 1、**Phase 1 的 Level 2 计划**，以及 Phase 1 的 Level 3 计划（[phase-01/plan.md](phase-01/plan.md)，当前仅展开 M1）；其他 Phase 保持高层规划，不提前展开任务细节。

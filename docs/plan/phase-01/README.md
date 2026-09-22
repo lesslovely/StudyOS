@@ -1,8 +1,10 @@
 # Phase 1 — 知识学习闭环 MVP（HTML + CSS + JavaScript）
 
-状态：⬜ 待进入（Level 2 计划已就绪；Level 3 任务计划 `plan.md` 待进入时创建）
+状态：🟨 进行中（2026-09-19 进入；M0 ✅ 已完成，M1 ⬜ 待开始；Level 3 计划：[plan.md](plan.md)，手动验证：[manual-checklist.md](manual-checklist.md)）
 
 > **导航**：[计划总入口](../README.md) · [总路线](../roadmap.md) · [产品路线](../product-roadmap.md) · [技术路线](../architecture-roadmap.md) · [学习路线](../learning-roadmap.md) · [维护规则](../maintenance.md) · [决策记录](../decisions.md)
+>
+> **本阶段文档**：[M1 详细任务计划 plan.md](plan.md) · [手动验证清单 manual-checklist.md](manual-checklist.md)
 >
 > **阶段导航**：← [Phase 0 项目定义](../phase-00/README.md) · [Phase 2 前端工程化](../phase-02/README.md) →
 
@@ -130,7 +132,7 @@ Phase 1 即按四组分离**分组建模**，但物理上存在同一对象 / �
 
 ## 页面规划（视图级，不做路由库）
 
-通过简单的视图切换实现，建议三个视图（待进入时确认，见 [decisions.md 待确认问题](../decisions.md#待确认问题进入-phase-1-时由开发者拍板)）：
+通过简单的视图切换实现，建议三个视图（已确认推迟到 M2/M3 进入时拍板，见 [decisions.md 待确认问题处理结果](../decisions.md#待确认问题处理结果2026-09-19)）：
 
 1. **知识总览**：领域 / 知识树浏览；薄弱知识列表（mastery < 40 或重点未掌握）；规则建议区；待办任务；最近学习记录。它是旧 Dashboard 的收敛形态，只服务闭环。
 2. **知识详情**：上述 Knowledge Detail 的全部内容；内联自评掌握度、标记重点、创建关联任务、查看记录时间线、跳转关系知识。
@@ -140,7 +142,9 @@ Phase 1 即按四组分离**分组建模**，但物理上存在同一对象 / �
 
 ## 开发顺序（里程碑，Level 2）
 
-> 这里只排里程碑，不排“第一天 / 第二天”。Level 3 的任务拆解在进入阶段时写入 `plan.md`。每个里程碑都对应明确学习内容、产出、验收与 Git 提交节点。
+> 这里只排里程碑，不排“第一天 / 第二天”。Level 3 的任务拆解在进入阶段时写入 [plan.md](plan.md)（当前已展开 M1，M2–M7 进入时再展开）。每个里程碑都对应明确学习内容、产出、验收与 Git 提交节点。
+>
+> **当前进度**：M0 ✅（基线提交 `61e6ddb` + [手动验证清单](manual-checklist.md)）；M1 ⬜ 待开始，进入决策见 [D-012](../decisions.md)。
 
 | 里程碑 | 内容 | 同步学习 | 验收要点 |
 | --- | --- | --- | --- |
@@ -176,7 +180,7 @@ Phase 1 即按四组分离**分组建模**，但物理上存在同一对象 / �
 
 ## Git 节点与 Review 机制
 
-- 全程在 `main` 上小步提交（单人学习项目，暂不需要分支策略）；一个里程碑至少一个提交，提交信息形如 `phase-1: knowledge crud with hierarchy`。
+- Phase 1 开发在 `feature/knowledge` 分支小步提交（[D-013](../decisions.md)；M0 基线已在 main 上）；一个里程碑至少一个提交，提交信息形如 `phase-1: knowledge crud with hierarchy`。
 - 每个里程碑执行 Review 门：开发者自述实现 → AI 针对原理提问 → AI Review diff 并指出问题 → **开发者自己修复** → 跑验证清单 → 进入下一里程碑。
 - AI 不直接替开发者写当阶段正在学习的代码；如破例，必须在复盘里记录原因与学习影响（原则见[学习路线](../learning-roadmap.md#学习方法论)）。
 
@@ -202,4 +206,5 @@ Phase 1 即按四组分离**分组建模**，但物理上存在同一对象 / �
 
 ## 变更记录
 
+- 2026-09-19：正式进入 Phase 1（[D-012](../decisions.md)、[D-013](../decisions.md)）；M0 完成，新增 [plan.md](plan.md)（M1 任务拆解）与 [manual-checklist.md](manual-checklist.md)；Git 节点说明更新为 `feature/knowledge` 分支。
 - 2026-09-17：按知识学习闭环重定义 Phase 1（旧版以记录 / 任务 / 项目 / Dashboard 为中心），见 [D-003](../decisions.md)；新增数据模型、页面规划、里程碑与 Review 门。

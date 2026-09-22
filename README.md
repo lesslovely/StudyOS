@@ -2,7 +2,7 @@
 
 Personal Learning Operating System（个人学习操作系统）
 
-> **项目状态：规划中。Phase 0 已完成，Phase 1 待进入；当前无业务代码。**
+> **项目状态：Phase 1 进行中（M0 基线已完成，M1 数据与存储计划就绪、代码未开始）；当前无业务代码。**
 
 ## 项目定位
 
@@ -53,12 +53,12 @@ StudyOS 是**以个人知识为核心、以学习闭环为基础、以 AI 为智
 
 ```text
 Phase 0 项目定义与计划系统：✅ 已完成
-Phase 1 知识学习闭环 MVP：⬜ 待进入（HTML + CSS + JavaScript + localStorage）
+Phase 1 知识学习闭环 MVP：🟨 进行中（M0 ✅，M1 数据与存储待开始）
 Phase 2–12：⬜ 规划中
 代码：src/ 仅有空脚手架，无业务代码
 ```
 
-当前阶段只维护计划，不写业务代码、不初始化技术栈、不安装依赖。开发者说“进入 Phase 1”后，按[进入 Phase 标准流程](docs/plan/maintenance.md#进入-phase-的标准流程)生成详细任务计划，确认后才开始开发。
+Phase 1 按[进入 Phase 标准流程](docs/plan/maintenance.md#进入-phase-的标准流程)推进：M1 详细任务计划见 [phase-01/plan.md](docs/plan/phase-01/plan.md)，确认后才开始编码；M1 只做数据与存储，不写 UI。
 
 ## 仓库结构
 
